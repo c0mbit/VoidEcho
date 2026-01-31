@@ -1,0 +1,38 @@
+arena:
+  center:
+    world: "void_echo_world"
+    x: 0
+    y: 100
+    z: 0
+  size: 60 # Размер невидимого фундамента (барьеры)
+
+game:
+  min-players: 1
+  max-players: 16
+  countdown-seconds: 10
+
+mechanics:
+  pulse:
+    interval-ticks: 100 # Раз в 5 секунд
+    reveal-duration-ticks: 70 # Сколько времени блоки видны (3.5 сек)
+    warning-duration-ticks: 20 # За сколько тиков блоки станут красными перед исчезновением
+
+  snowball:
+    reveal-duration-ticks: 60 # 3 секунды
+    reveal-radius: 2 # Радиус "подсветки" от снежка
+    amount-given: 32 # Сколько снежков выдавать при старте
+
+  knockback:
+    rod-multiplier: 1.5 # Сила откидывания удочкой
+    vertical-boost: 0.35 # Насколько сильно подкидывает вверх при ударе
+
+  rewards:
+    coins-per-pulse: 5 # За выживание во время импульса
+    coins-per-kill: 15 # За выталкивание игрока в пустоту
+    coins-for-win: 100 # За победу в матче
+
+messages:
+  prefix: "§6[VoidEcho]§r"
+  game-start: "%prefix% §aИгра началась! Вытолкните всех за пределы арены!"
+  eliminated: "%prefix% §c%player% вылетел из игры!"
+  kill-reward: "§6+15 монет за выталкивание игрока!"

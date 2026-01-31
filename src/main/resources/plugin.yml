@@ -1,0 +1,15 @@
+name: VoidEcho
+version: 1.0.0
+main: com.voidecho.VoidEcho
+api-version: '1.21'
+description: A survival mini-game where players navigate an invisible arena
+author: VoidEcho Team
+commands:
+  voidecho:
+    description: Main command for VoidEcho mini-game
+    usage: /<command> <join|leave|arena|start|stop|setarena|status>
+    aliases: [ve]
+permissions:
+  voidecho.admin:
+    description: Allows access to admin commands (setarena, start, stop)
+    default: op
